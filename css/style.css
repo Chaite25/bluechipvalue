@@ -1,0 +1,426 @@
+/*  ================================
+        global area start 
+    ================================ */
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    color: #1a1a1a;
+}
+
+a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 14px !important;
+
+
+}
+
+.main-div {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*  ================================
+        global area end
+    ================================ */
+
+/*  ================================
+        header area start
+    ================================ */
+
+.header-top {
+    margin: 10px 0;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0;
+    }
+
+    17% {
+        left: 0;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    37% {
+        left: -100%;
+    }
+
+    40% {
+        left: 0;
+    }
+}
+
+.all-slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+figure.slider {
+    animation: 30s slidy infinite;
+    font-size: 0;
+    position: relative;
+    width: 600%;
+}
+
+figure.slider figure {
+    display: inline-block;
+    height: auto;
+    position: inherit;
+    width: 16.66666666666667%;
+}
+
+figure.slider img {
+    width: 100%;
+    height: auto;
+}
+
+figure.slider figure figcaption {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.6rem;
+    position: absolute;
+    width: 100%;
+}
+
+.logo img {
+    width: 200px;
+}
+
+/*======================== Menu Design ==================*/
+.menu-container {
+    background-color: #001952;
+}
+
+#menu-switcher,
+.navbar-header > label,
+.switch {
+    display: none;
+}
+
+.menu-container label::before {
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 5px 0 0 #fff, 0 0 0 0 inset, 0 -5px 0 0 #fff;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
+
+.switch {
+    width: 100%;
+    float: left;
+    height: auto;
+    min-height: 45px;
+    position: relative;
+}
+
+.menu-container label {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    padding: 0;
+    position: absolute !important;
+    right: 0;
+    top: 4px;
+    width: 40px;
+    z-index: 9999;
+    border: 1px solid #fff;
+}
+
+#navbar ul {
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline-block;
+    list-style: outside none none;
+}
+
+#navbar ul li a {
+    font-size: 17px;
+    color: #fff;
+    padding: 15px 30px;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#navbar ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* menu part end */
+
+/*  ================================
+        header area end
+    ================================ */
+
+/*  ================================
+        product title area start
+    ================================ */
+
+.pro-title {
+    background-color: #001952;
+    padding: 15px 30px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.pro-title h3 {
+    color: #fff;
+    font-size: 22px;
+    display: inline-block;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+/*  ================================
+        product title area end
+    ================================ */
+
+/*  ================================
+        product area start
+    ================================ */
+
+.sidebar-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #001952;
+    color: #fff;
+    text-transform: capitalize;
+    border-bottom: 1px solid #fff;
+}
+
+.product-wraper {
+    border: 1px solid #D1D1D1;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+.dec-title {
+    margin: 30px 0 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.product-dec {
+    padding: 0 30px 15px;
+    border: 1px solid #D1D1D1;
+}
+
+.product-dec h3 {
+    color: #001952;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 30px 0 15px;
+    font-weight: bold;
+}
+
+.product-dec h4 {
+    font-weight: 600;
+    color: #000;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 20px 0 10px;
+    text-transform: capitalize;
+}
+
+.product-dec ul {
+    margin-bottom: 30px;
+}
+
+.product-dec ul,
+.tab-list ul {
+    margin: 0 0 10px;
+}
+
+.product-dec ul li,
+.tab-list ul li {
+    list-style: none;
+    padding: 5px 20px;
+    position: relative;
+    font-size: 14px;
+
+}
+
+.sidebar-box ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.sidebar-box ul li a {
+    margin-bottom: 1px;
+    padding: 5px 34px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #000;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+    background-color: #eee;
+}
+
+.sidebar-box ul li a::before {
+    position: absolute;
+    content: "\f046";
+    font-family: fontawesome;
+    left: 10px;
+    font-weight: 400;
+}
+
+.sidebar-box ul li a:hover {
+    background-color: #001952;
+    color: #fff;
+}
+
+.product-dec ul li::before,
+.tab-list ul li::before {
+    position: absolute;
+    content: "\f046";
+    font-family: fontawesome;
+    left: 0;
+    color: #001952;
+}
+
+/*  ================================
+        product area end
+    ================================ */
+
+/*  ================================
+        tab area start
+    ================================ */
+
+.tab-part-area {
+    padding: 30px 0;
+}
+
+section.tab-section {
+    display: none;
+    padding: 15px 30px;
+    border: 1px solid #ddd;
+    color: #1a1a1a;
+    overflow: hidden;
+}
+
+.tab-part-area input {
+    display: none;
+}
+
+.tab-part-area label {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: #F8F8FA;
+    border: 1px solid #ddd;
+    transition: 0.5s;
+}
+
+.tab-part-area label:hover {
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #001952;
+    background-color: #001952;
+}
+
+.tab-part-area input:checked + label {
+    color: #fff;
+    border: 1px solid #001952;
+    background-color: #001952;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+    display: block;
+}
+
+.tab-section p {
+    color: #3D3D3D;
+    font-weight: 500;
+}
+
+.tab-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 15px;
+}
+
+
+.tab-section p a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/*  ================================
+        tab area end
+    ================================ */
+
+/*  ================================
+        footer area start
+    ================================ */
+.footer-logo img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p{
+    background-color: #001952;
+    color: #fff;
+    padding: 10px 0;
+}
+/*  ================================
+        footer area end
+    ================================ */
